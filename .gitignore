@@ -95,3 +95,5 @@ bin/
 share/
 pip-selfcheck.json
 pyvenv.cfg
+
+dataset/*
