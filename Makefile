@@ -1,6 +1,6 @@
 requirements=requirements.txt
 
-run: bin/jupyter dataset/mnist.py ch3/sample_weight.pkl common/gradient.py common/functions.py
+run: bin/jupyter dataset/mnist.py ch3/sample_weight.pkl common/gradient.py common/functions.py common/layers.py
 	$< notebook
 
 bin/jupyter: bin/pip
@@ -32,3 +32,9 @@ common/gradient.py: common
 
 common/functions.py: common
 	wget -O $@ https://raw.githubusercontent.com/oreilly-japan/deep-learning-from-scratch/master/common/functions.py
+
+common/layers.py: common
+	wget -O $@ https://raw.githubusercontent.com/oreilly-japan/deep-learning-from-scratch/master/common/layers.py
+
+common/util.py: common
+	wget -O $@ https://raw.githubusercontent.com/oreilly-japan/deep-learning-from-scratch/master/common/util.py
