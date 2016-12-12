@@ -38,3 +38,6 @@ common/layers.py: common
 
 common/util.py: common
 	wget -O $@ https://raw.githubusercontent.com/oreilly-japan/deep-learning-from-scratch/master/common/util.py
+
+common/optimizer.py: common
+	wget -O $@ https://raw.githubusercontent.com/oreilly-japan/deep-learning-from-scratch/master/common/optimizer.py
