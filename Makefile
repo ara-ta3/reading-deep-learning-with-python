@@ -1,6 +1,6 @@
 requirements=requirements.txt
 
-run: bin/jupyter dataset/mnist.py ch3/sample_weight.pkl common/gradient.py common/functions.py common/layers.py
+run: bin/jupyter dataset/mnist.py ch3/sample_weight.pkl common/gradient.py common/functions.py common/layers.py common/util.py
 	$< notebook
 
 bin/jupyter: bin/pip
@@ -11,6 +11,9 @@ bin/pip:
 
 install: bin/pip
 	$< install -r $(requirements)
+
+clean:
+	rm -rf bin lib include
 
 dataset:
 	mkdir -p $@
